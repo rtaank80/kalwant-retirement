@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalwant's Retirement</title>
+<style>
+:root{
+  --bg:#f4f1ea; --card:#fffdf8; --ink:#1d2430; --muted:#5d6470; --gold:#a8843f; --line:rgba(29,36,48,.12);
+  --serif:"Iowan Old Style","Palatino Linotype",Georgia,serif; --sans:"Segoe UI","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1824;--card:#162435;--ink:#f4efe6;--muted:#b9b3a8;--gold:#c9ab6e;--line:rgba(255,255,255,.12)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5}
+main{max-width:1180px;margin:0 auto;padding:56px max(16px,4vw) 64px}
+header{text-align:center;margin-bottom:44px}
+.eyebrow{font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:600}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,6vw,72px);line-height:1.05;margin:12px 0 10px;text-wrap:balance}
+header p{color:var(--muted);margin:0 auto;max-width:56ch;font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+a.card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;color:inherit;text-decoration:none;transition:transform .2s,box-shadow .2s}
+a.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.14)}
+a.card:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+a.card img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+.body{padding:18px 20px 22px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.body h2{margin:0;font-family:var(--serif);font-weight:400;font-size:26px}
+.body p{margin:0;color:var(--muted);font-size:15px}
+.go{margin-top:8px;color:var(--gold);font-weight:600;font-size:14px;letter-spacing:.04em}
+.tips{margin-top:44px;padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font-size:15px;text-align:center}
+.tips kbd{font-family:inherit;border:1px solid var(--line);border-radius:4px;padding:1px 6px;font-size:13px}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">1976 &middot; 2026</div>
+    <h1>Happy Retirement, Kalwant</h1>
+    <p>Fifty years of precision engineering. Three slideshows to celebrate, with love from the whole family.</p>
+  </header>
+  <div class="grid">
+    <a class="card" href="classic/">
+      <img src="thumbs/classic.jpg" alt="Classic slideshow title page">
+      <div class="body"><h2>Classic</h2><p>Navy and gold, with gentle crossfades and chapter cards.</p><span class="go">Open slideshow &rarr;</span></div>
+    </a>
+    <a class="card" href="scrapbook/">
+      <img src="thumbs/scrapbook.jpg" alt="Scrapbook slideshow opening">
+      <div class="body"><h2>Scrapbook</h2><p>Tilted prints on black, handwritten titles and full-screen photos.</p><span class="go">Open slideshow &rarr;</span></div>
+    </a>
+    <a class="card" href="album/">
+      <img src="thumbs/album.jpg" alt="Album slideshow title page">
+      <div class="body"><h2>Album</h2><p>Soft sage gingham, white-bordered prints and hand-drawn notes.</p><span class="go">Open slideshow &rarr;</span></div>
+    </a>
+  </div>
+  <p class="tips">Each slideshow loops on its own. Press <kbd>Start slideshow</kbd> to go full screen. <kbd>Space</kbd> pauses, the arrow keys skip and <kbd>F</kbd> toggles full screen.</p>
+</main>
+</body>
+</html>
